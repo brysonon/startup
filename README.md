@@ -1,6 +1,6 @@
 # Caregiver Tool
 
-I am currently working as an at-home caregiver for an elderly family member. Caregiver Tool, my startup application, would allow caregivers like me to record their patients' vitals, track their health over time using graphs, and message other caregivers/healthcare providers. The main page displays the patient's current vitals and tracking graphs, and these statistics can be updated and recorded in the spreadsheet page. When problems or issues arise, a doctor, at-home nurse, or fellow caregiver can be messaged and notified. 
+I am currently working as an at-home caregiver for an elderly family member. Caregiver Tool, my startup application, would allow at-home caregivers like me to record their patients' vitals, track their health over time using graphs, and message other caregivers/healthcare providers. The main page displays the patient's current vitals and historical graphs, and these statistics can be updated and recorded in the spreadsheet page. When issues arise, a doctor, at-home nurse, or fellow caregiver can be messaged and notified. 
 
 ### Home Page
 ![home page startup](https://user-images.githubusercontent.com/103865040/215246968-b3897a16-16a9-47d4-8e2c-9ba4baf5ac13.PNG)
