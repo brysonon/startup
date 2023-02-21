@@ -19,6 +19,7 @@ Key features:
 Notes about console assignment: 
 This was a great experience. I learned a ton about repositories and cloning them to my computer. I learned how to push and pull changes. I learned how to edit my files using the console and GitHub. 
 Steps to remember: git pull, git add ., git commit -m "(insert message)", git push
+Also: check what directory with cmd and change directory with cd
 
 Notes on simon project:
 This project was a lot of fun and solidified my understanding with HTML structure, content, and layout. I had fun experimenting with different HTML elements. I also became a lot more comfortable with pushing my local development edits to my repository and constantly checking to make sure my progress was saved. I want to remember the console command: ./deployFiles.sh -k /keys/mykey.pem -h mydomain.click -s simon to deploy to my production environment. Head to simon.brysonon.com to check it out!
