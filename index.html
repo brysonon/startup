@@ -1,27 +1,67 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="en">
   <head>
-    <!--Responsive meta tag, title, link CSS file, link Bootstrap-->
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Startup</title>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Caregiver Tool</title>
     <link rel="stylesheet" href="main.css" />
-    <link
-      href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/css/bootstrap.min.css"
-      rel="stylesheet"
-      integrity="sha384-Zenh87qX5JnK2Jl0vWa8Ck2rdkQ2Bzep5IDxbcnCeuOxjzrPF/et3URy9Bv1WTRi"
-      crossorigin="anonymous"
-    />
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/css/bootstrap.min.css" 
+          rel="stylesheet" 
+          integrity="sha384-rbsA2VBKQhggwzxH7pPCaAqO46MgnOM80zW1RWuH61DGLwZJEdK2Kadq2F9CUG65" 
+          crossorigin="anonymous"
+    >
   </head>
   
   <body>
-    <header>
-      
+    <header class=" flex-wrap align-items-center justify-content-center justify-content-md-between border-1 border-bottom border-dark">
+      <h1>
+        <span class="fw-bold text-dark">Caregiver Tool</span>
+      </h1>
+
+      <ul class="nav col-12 col-md-auto mb-2 justify-content-center mb-md-0">
+        <li><a href="#" class="nav-link px-2 link-dark">Home</a></li>
+        <li><a href="#" class="nav-link px-2 link-dark">Features</a></li>
+        <li><a href="#" class="nav-link px-2 link-dark">Pricing</a></li>
+        <li><a href="#" class="nav-link px-2 link-dark">FAQs</a></li>
+        <li><a href="#" class="nav-link px-2 link-dark">About</a></li>
+      </ul>
     </header>
+    
     <main>
-
+      <div class="shadow p-3 bg-body-tertiary rounded" style="width: 50%">
+        <div class="align-items-center mb-4">
+          <div class="col-auto">
+            <h6>Name</h6>
+          </div> 
+          <div class="col-auto">
+            <input id="inputPassword" class="form-control" aria-describedby="passwordHelpInline"></input>
+          </div>
+          <div class="col-auto">
+            <span id="passwordHelpInline" class="form-text">
+              Please enter your name.
+            </span>
+          </div>
+        </div>
+      <div class="align-items-center">
+          <div class="col-auto">
+            <h6>Password</h6>
+          </div> 
+          <div class="col-auto">
+            <input id="inputPassword" class="form-control" aria-describedby="passwordHelpInline"></input>
+          </div>
+          <div class="col-auto">
+            <span id="passwordHelpInline" class="form-text">
+              Please enter your password.
+            </span>
+          </div>
+        </div>
+      </div>
     </main>
-    <footer>
-
+    
+    <footer class="flex-wrap justify-content-between align-items-center border-1 border-top border-dark">
+      <div class="d-flex align-items-center">
+        <span class="text-muted">Bryson On</span>
+      </div>
     </footer>
   </body>
 </html>
