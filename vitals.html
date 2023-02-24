@@ -3,24 +3,25 @@
   <head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="main.css" />
     <title>Bootstrap demo</title>
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-GLhlTQ8iRABdZLl6O3oVMWSktQOp6b7In1Zl3/Jr59b6EGGoI1aFkw7cmDA6j6gD" crossorigin="anonymous">
   </head>
   
   <body>
-    <header class="flex-wrap align-items-center justify-content-center justify-content-md-between border-1 border-bottom border-dark">
+    <header class="flex-wrap align-items-center justify-content-center justify-content-md-between">
       <h1>
         <span class="fw-bold text-dark">Caregiver Tool</span>
       </h1>
       <ul class="nav nav-pills p-1 mx-3">
         <li class="nav-item">
-          <a class="nav-link" href="index.html">Active</a>
+          <a class="nav-link" aria-current="page" href="index.html">Home</a>
         </li>
         <li class="nav-item">
-          <a class="nav-link active"  aria-current="page" href="#">Link</a>
+          <a class="nav-link active" href="#">Vitals</a>
         </li>
         <li class="nav-item">
-          <a class="nav-link" href="message.html">Link</a>
+          <a class="nav-link" href="message.html">Message</a>
         </li>
       </ul>
     </header>
@@ -57,7 +58,7 @@
         </div>
       </div>
     </main>
-    <footer class="flex-wrap justify-content-between align-items-center border-1 border-top border-dark">
+    <footer class="flex-wrap justify-content-between align-items-center">
       <div class="d-flex align-items-center">
         <span class="text-muted">Bryson On</span>
       </div>
