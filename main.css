@@ -8,13 +8,13 @@ body {
   header {
     display: flex;
     flex: 0 60px;
-    background-color: rgb(140, 153, 215);
+    background-color: rgb(168, 176, 229);
   }
   
   footer {
     display: flex;
     flex: 0 15px;
-    background-color: rgb(140, 153, 215);
+    background-color: rgb(168, 176, 229);
   }
   
   main {
@@ -24,6 +24,18 @@ body {
     justify-content: center;
     background-color: rgb(209, 215, 246);
     align-items: center
+  }
+  
+  .nav-pills > li > a.active {
+    background-color: #7C88CA !important;
+  }
+  
+  .nav-pills > li > a {
+    color: black !important;
+  }
+  
+  .nav-pills > li > a:hover {
+    color: white !important;
   }
   
   @media (orientation: portrait) {
