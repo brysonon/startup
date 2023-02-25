@@ -7,7 +7,6 @@
     <title>Bootstrap demo</title>
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-GLhlTQ8iRABdZLl6O3oVMWSktQOp6b7In1Zl3/Jr59b6EGGoI1aFkw7cmDA6j6gD" crossorigin="anonymous">
   </head>
-  
   <body>
     <header class="flex-wrap align-items-center justify-content-center justify-content-md-between">
       <h1>
@@ -27,72 +26,50 @@
     </header>
     <main>
       <div class="container py-5">
-    
-        <div class="row d-flex justify-content-center" style="border: 2px solid green">
-    
-            <div class="card" id="chat1" style="border-radius: 15px; border: solid red 2px">
-              <div
-                class="card-header d-flex justify-content-between align-items-center bg-info text-white border-bottom-0"
-                style="border-top-left-radius: 15px; border-top-right-radius: 15px;">
-                <i class="fas fa-angle-left"></i>
-                <p class="fw-bold">Live chat</p>
-                <i class="fas fa-times"></i>
+        <div class="row d-flex justify-content-center">
+          <div class="card m-0 p-0" id="chat" style="border-radius: 15px;">
+            <div
+              class="card-header d-flex justify-content-between align-items-center bg-dark text-white border-bottom-0"
+              style="border-top-left-radius: 15px; border-top-right-radius: 15px;">
+              <i class="fas fa-angle-left"></i>
+              <p class="fw-bold">CareChat</p>
+              <i class="fas fa-times"></i>
+            </div>
+            <div class="card-body">
+              <div class="d-flex flex-row justify-content-start mb-4 text">
+                Bryson On
+                <div class="p-3 ms-3" style="border-radius: 15px; background-color: rgba(57, 192, 237,.2);">
+                  <p class="small mb-0">Hello and thank you for visiting my startup application. It will be fully operational soon.</p>
+                </div>
               </div>
-              <div class="card-body">
-    
-                <div class="d-flex flex-row justify-content-start mb-4">
-                  <img src="https://mdbcdn.b-cdn.net/img/Photos/new-templates/bootstrap-chat/ava1-bg.webp"
-                    alt="avatar 1" style="width: 45px; height: 100%;">
-                  <div class="p-3 ms-3" style="border-radius: 15px; background-color: rgba(57, 192, 237,.2);">
-                    <p class="small mb-0">Hello and thank you for visiting MDBootstrap. Please click the video
-                      below.</p>
-                  </div>
+              <div class="d-flex flex-row justify-content-end mb-4">
+                <div class="p-3 me-3 border" style="border-radius: 15px; background-color: #fbfbfb;">
+                  <p class="small mb-0">Thank you, I love the application so far.</p>
                 </div>
-    
-                <div class="d-flex flex-row justify-content-end mb-4">
-                  <div class="p-3 me-3 border" style="border-radius: 15px; background-color: #fbfbfb;">
-                    <p class="small mb-0">Thank you, I really like your product.</p>
-                  </div>
-                  <img src="https://mdbcdn.b-cdn.net/img/Photos/new-templates/bootstrap-chat/ava2-bg.webp"
-                    alt="avatar 1" style="width: 45px; height: 100%;">
+                Isaac On
+              </div>
+              <div class="d-flex flex-row justify-content-start mb-4 text">
+                Bryson On
+                <div class="p-3 ms-3" style="border-radius: 15px; background-color: rgba(57, 192, 237,.2);">
+                  <p class="small mb-0">I still have to add JavaScript and WebSocket functionality. I also plan to link my site to a Google Sheets.</p>
                 </div>
-    
-                <div class="d-flex flex-row justify-content-start mb-4">
-                  <img src="https://mdbcdn.b-cdn.net/img/Photos/new-templates/bootstrap-chat/ava1-bg.webp"
-                    alt="avatar 1" style="width: 45px; height: 100%;">
-                  <div class="ms-3" style="border-radius: 15px;">
-                    <div class="bg-image">
-                      <img src="https://mdbcdn.b-cdn.net/img/Photos/new-templates/bootstrap-chat/screenshot1.webp"
-                        style="border-radius: 15px;" alt="video">
-                      <a href="#!">
-                        <div class="mask"></div>
-                      </a>
-                    </div>
-                  </div>
+              </div>
+              <div class="d-flex flex-row justify-content-end mb-4">
+                <div class="p-3 me-3 border" style="border-radius: 15px; background-color: #fbfbfb;">
+                  <p class="small mb-0">Cool!</p>
                 </div>
-    
-                <div class="d-flex flex-row justify-content-start mb-4">
-                  <img src="https://mdbcdn.b-cdn.net/img/Photos/new-templates/bootstrap-chat/ava1-bg.webp"
-                    alt="avatar 1" style="width: 45px; height: 100%;">
-                  <div class="p-3 ms-3" style="border-radius: 15px; background-color: rgba(57, 192, 237,.2);">
-                    <p class="small mb-0">...</p>
-                  </div>
-                </div>
-    
-                <div class="form-outline">
-                  <textarea class="form-control" id="textAreaExample" rows="4"></textarea>
-                  <label class="form-label" for="textAreaExample">Type your message</label>
-                </div>
-    
+                Isaac On
+              </div>
+              <div class="form-outline">
+                <textarea class="form-control" id="textAreaExample" rows="4" placeholder="Type your message"></textarea>
               </div>
             </div>
-    
           </div>
         </div>
-    
       </div>
-    </section>
-          </main>
+      </div>
+      </section>
+    </main>
     <footer class="flex-wrap justify-content-between align-items-center">
       <div class="d-flex align-items-center">
         <span class="text-muted">Bryson On</span>
