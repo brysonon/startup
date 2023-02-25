@@ -26,3 +26,6 @@ This project was a lot of fun and solidified my understanding with HTML structur
 
 Notes on Simon CSS project:
 Being able to finally stylize the website and customize it to my liking was very entertaining and fulfilling. I became much more comfortable with the use of CSS and its Bootstrap framework, and I learned a lot about flex containers and how to make your site responsive. You can set a container's display to flex (display: flex) and change the alignment of its child elements with flex-direction: column or row. Bootstrap can be used to simplify the process of making your site responsive and provides great formatting for buttons and texts.
+
+Notes on startup application - HTML and CSS version:
+I learned so much more about HTML and CSS through this project. I figured out just how helpful Bootstrap can be, as it heavily simplifies the coding that you need to do. With a little bit of documentation reading and CSS knowledge, you can easily create a site out of your ideas. I want to remember the link https://getbootstrap.com/docs/5.3/getting-started/introduction/ which provides all of the Bootstrap documentation. 
