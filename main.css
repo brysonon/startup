@@ -26,7 +26,16 @@ body {
     flex-direction: column;
     justify-content: center;
     background-color: rgb(209, 215, 246);
-    align-items: center
+    align-items: center; 
+  }
+  
+  section:nth-child(1) {
+    flex: 1;
+    background-color: white;
+  }
+  section:nth-child(2) {
+    flex: 8;
+    background-color: #F4F6FE;
   }
   
   .nav-pills > li > a.active {
@@ -46,7 +55,7 @@ body {
       flex-direction: column;
     }
     main {
-      flex-direction: column;
+      flex-direction: column !important;
     }
   }
   
