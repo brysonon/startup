@@ -29,3 +29,6 @@ Being able to finally stylize the website and customize it to my liking was very
 
 Notes on startup application - HTML and CSS version:
 I learned so much more about HTML and CSS through this project. I figured out just how helpful Bootstrap can be, as it heavily simplifies the coding that you need to do. With a little bit of documentation reading and CSS knowledge, you can easily create a site out of your ideas. I want to remember the link https://getbootstrap.com/docs/5.3/getting-started/introduction/ which provides all of the Bootstrap documentation. 
+
+Notes on Simon JavaScript project:
+Implementing JavaScript into the simon project has been my favorite implementation so far. This is because it has made the application fully operational, and the game can now be played. The most useful feature of the application that I learned was the use of localStorage to instantiate Storage objects to store user information, such as the name and scores. I also learned that the querySelector() function could be used to select specific elements within HTML. This link: https://developer.mozilla.org/en-US/docs/Web/API is very useful because it details JavaScript that can be utilized for a variety of web APIs. 
