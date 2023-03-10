@@ -42,8 +42,12 @@ messageInput.addEventListener('keydown', function(event) {
   }
 });
 
-const caregiverName = document.querySelector('.caregiver-name');
-caregiverName.textContent = this.getCaregiverName();
+//Place caregiver names before the message bubble
+let caregiverNames = document.querySelectorAll('.caregiver-name');
+
+for (let i = 0; i < caregiverNames.length; i++) {
+  caregiverNames[i].innerHTML = this.getCaregiverName();
+}
 
 function getCaregiverName() {
   return localStorage.getItem('username') ?? 'Anonymous user';
