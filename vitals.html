@@ -27,14 +27,19 @@
     <main style="flex-direction: row; align-items: stretch;">
       <section class="p-3">
         <nav class="nav flex-column">
-          <text class="text-center">Navigation
-            <span class="caregiver-name">Blank</span>
-          </text>
-          <a class="btn btn-dark m-2 mt-3" href="#input">Input</a>
+          <text class="text-center">Navigation</text>
+          <a class="btn btn-dark m-2 mt-3" href="#welcome">Welcome</a>
+          <a class="btn btn-dark m-2" href="#input">Input</a>
           <a class="btn btn-dark m-2" href="#graphs">Graphs</a>
         </nav>
       </section>
       <section class="p-2">
+        <div class="d-flex flex-column">
+          <h1 class="display-4 mb-4" id="welcome">Welcome, <span class="caregiver-name"></span></h1>
+          <text>Time since login: <span id="timer"></span></text>
+          <text>Hours worked this week: <span id="hours">N/A</span></text>
+          <hr class="mx-5">
+        </div> 
         <div>
           <h1 class="display-4 mb-4" id="input">Input Vitals</h1>
           <form class="row g-4 m-5 p-5 rounded needs-validation" style="background-color: white" novalidate>
@@ -109,8 +114,7 @@
           <figure class="figure">
             <img src="..." class="figure-img img-fluid rounded" alt="Graph of weight over time">
             <figcaption class="figure-caption">Coming soon.               </figcaption>
-          </figure>
-        </div>    
+          </figure>  
       </section>
     </main>
     <footer class="flex-wrap justify-content-between align-items-center">

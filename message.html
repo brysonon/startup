@@ -37,19 +37,19 @@
             </div>
             <div class="card-body">
               <div class="d-flex flex-row justify-content-start mb-4 text">
-                Bryson On
+                <span class="caregiver-name"></span>
                 <div class="p-3 ms-3" style="border-radius: 15px; background-color: rgba(57, 192, 237,.2);">
-                  <p class="small mb-0">Hello and thank you for visiting my startup application. It will be fully operational soon.</p>
+                  <p class="small mb-0" id="messages-container">My application will be complete soon. For now, see your typed text below!</p>
                 </div>
               </div>
               <div class="d-flex flex-row justify-content-end mb-4">
                 <div class="p-3 me-3 border" style="border-radius: 15px; background-color: #fbfbfb;">
                   <p class="small mb-0">Thank you, I love the application so far.</p>
                 </div>
-                Isaac On
+                Other User
               </div>
               <div class="d-flex flex-row justify-content-start mb-4 text">
-                Bryson On
+                <span class="caregiver-name"></span>
                 <div class="p-3 ms-3" style="border-radius: 15px; background-color: rgba(57, 192, 237,.2);">
                   <p class="small mb-0">I still have to add JavaScript and WebSocket functionality. I also plan to link my site to a Google Sheets.</p>
                 </div>
@@ -58,10 +58,10 @@
                 <div class="p-3 me-3 border" style="border-radius: 15px; background-color: #fbfbfb;">
                   <p class="small mb-0">Cool!</p>
                 </div>
-                Isaac On
+                Other User
               </div>
               <div class="form-outline">
-                <textarea class="form-control" id="textAreaExample" rows="4" placeholder="Type your message"></textarea>
+                <input class="form-control" id="message-input" rows="4" placeholder="Type your message"></input>
               </div>
             </div>
           </div>
@@ -70,10 +70,13 @@
       </div>
       </section>
     </main>
+
     <footer class="flex-wrap justify-content-between align-items-center">
       <div class="d-flex align-items-center">
         <span class="text-muted">Bryson On</span>
       </div>
     </footer>
+
+    <script src="message.js"></script>
   </body>
 </html>
