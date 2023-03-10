@@ -1,10 +1,17 @@
-function login() {
-    const userName = document.querySelector("#name");
-    localStorage.setItem("userName", userName.value);
+class Caregiver {
+  hours;
 
-    const userPass = document.querySelector("#password");
-    localStorage.setItem("userPass", userName.value);
+  constructor() {
+    this.hours = 0;
     
-    window.location.href = "vitals.html";
+    const caregiverName = document.querySelector('.caregiver-name');
+    caregiverName.textContent = this.getCaregiverName();
   }
-  
+
+  getCaregiverName() {
+    return localStorage.getItem('username') ?? 'Anonymous user';
+  }
+}
+
+const caregiver = new Caregiver();
+

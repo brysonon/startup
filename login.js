@@ -1,10 +1,10 @@
 function login() {
-    const userName = document.querySelector("#name");
-    localStorage.setItem("userName", userName.value);
+  const username = document.querySelector("#name");
+  localStorage.setItem("username", username.value);
 
-    const userPass = document.querySelector("#password");
-    localStorage.setItem("userPass", userName.value);
-    
-    window.location.href = "vitals.html";
-  }
+  const userpass = document.querySelector("#password");
+  localStorage.setItem("userpass", userpass.value);
+  
+  window.location.href = "vitals.html";
+}
   
