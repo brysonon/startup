@@ -26,7 +26,7 @@
     </header>
     <main style="flex-direction: row; align-items: stretch;">
       <section class="p-3">
-        <nav class="nav flex-column">
+        <nav class="nav flex-column sticky-top">
           <text class="text-center">Navigation</text>
           <a class="btn btn-dark m-2 mt-3" href="#welcome">Welcome</a>
           <a class="btn btn-dark m-2" href="#input">Input</a>
@@ -42,29 +42,29 @@
         </div> 
         <div>
           <h1 class="display-4 mb-4" id="input">Input Vitals</h1>
-          <form class="row g-4 m-5 p-5 rounded needs-validation" style="background-color: white" novalidate>
+          <form action="https://sheetdb.io/api/v1/vy9k0fokaa5x6" method="post" id="sheetdb-form" class="row g-4 m-5 p-5 rounded needs-validation" style="background-color: white" novalidate>
             <div class="col-md-3">
               <label for="date" class="form-label">Date</label>
-              <input type="date" class="form-control" id="date">
+              <input type="date" class="form-control" name="data[date]">
             </div>
             <div class="col-md-3">
-              <label for="validationCustom01" class="form-label">Weight</label>
-              <input type="text" class="form-control" id="validationCustom01" required>
+              <label for="weight" class="form-label">Weight</label>
+              <input type="text" class="form-control" name="data[weight]" required>
               <div class="valid-feedback">
                 Looks good!
               </div>
             </div>
             <div class="col-md-3">
-              <label for="validationCustom02" class="form-label">Blood Pressure</label>
-              <input type="text" class="form-control" id="validationCustom02" placeholder=0/0 required>
+              <label for="blood pressure" class="form-label">Blood Pressure</label>
+              <input type="text" class="form-control" name="data[blood pressure]" placeholder=0/0 required>
               <div class="valid-feedback">
                 Looks good!
               </div>
             </div>
             <div class="col-md-3">
-              <label for="validationCustomUsername" class="form-label">Oxygen Level</label>
+              <label for="oxygen level" class="form-label">Oxygen Level</label>
               <div class="input-group has-validation">
-                <input type="text" class="form-control" id="validationCustomUsername" aria-describedby="inputGroupPrepend" required>
+                <input type="text" class="form-control" name="data[oxygen level]" aria-describedby="inputGroupPrepend" required>
                 <span class="input-group-text" id="inputGroupPrepend">%</span>
                 <div class="invalid-feedback">
                   Please type a number.
@@ -72,15 +72,15 @@
               </div>
             </div>
             <div class="col-md-3">
-              <label for="validationCustom03" class="form-label text">Heart Rate</label>
-              <input type="text" class="form-control" id="validationCustom03" required>
+              <label for="heart rate" class="form-label text">Heart Rate</label>
+              <input type="text" class="form-control" name="data[heart rate]" required>
               <div class="invalid-feedback">
                 Please provide a valid heart rate.
               </div>
             </div>
             <div class="col-md-2">
-              <label for="validationCustom04" class="form-label">Mood</label>
-              <select class="form-select" id="validationCustom04" required>
+              <label for="mood" class="form-label">Mood</label>
+              <select class="form-select" name="data[mood]" required>
                 <option selected disabled value="">On a scale from 1 to 5</option>
                 <option>1</option>
                 <option>2</option>
@@ -93,8 +93,8 @@
               </div>
             </div>
             <div class="col">
-              <label for="validationCustom05" class="form-label">Notes</label>
-              <input type="text" class="form-control" id="validationCustom05" required>
+              <label for="notes" class="form-label">Notes</label>
+              <input type="text" class="form-control" name="data[notes]" required>
               <div class="invalid-feedback">
                 Please provide valid notes.
               </div>
