@@ -32,3 +32,6 @@ I learned so much more about HTML and CSS through this project. I figured out ju
 
 Notes on Simon JavaScript project:
 Implementing JavaScript into the simon project has been my favorite implementation so far. This is because it has made the application fully operational, and the game can now be played. The most useful feature of the application that I learned was the use of localStorage to instantiate Storage objects to store user information, such as the name and scores. I also learned that the querySelector() function could be used to select specific elements within HTML. This link: https://developer.mozilla.org/en-US/docs/Web/API is very useful because it details JavaScript that can be utilized for a variety of web APIs. 
+
+Notes on startup application - JavaScript version:
+I am very excited to release a functional website that serves its purpose. My favorite part about this assignment was my ability to connect my form with Google Sheets to create an updatable database with vital information. This is the most useful feature because the data can then be displayed with graphs. JavaScript's ability to manipulate the DOM and the use of JSON are two important features that I want to remember.
