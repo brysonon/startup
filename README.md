@@ -37,15 +37,15 @@ Notes on startup application - JavaScript version:
 I am very excited to release a functional website that serves its purpose. My favorite part about this assignment was my ability to connect my form with Google Sheets to create an updatable database with vital information. This is the most useful feature because the data can then be displayed with graphs. JavaScript's ability to manipulate the DOM and the use of JSON are two important features that I want to remember.
 
 Notes on Simon Service project:
-*Code for adding static file middleware: app.use(express.static('public'));
-*Configure directory to work with node.js: npm init -y
-*Create a .gitignore file to ignore unwanted files like node_modules
-*Install express package: npm install express
-*index.js file will be called by node.js for web service
-*Basic JavaScript express code link: https://github.com/webprogramming260/.github/blob/main/profile/webServices/express/express.md
-*Make calls to third-party endpoints using fetch: 
+* Code for adding static file middleware: app.use(express.static('public'));
+* Configure directory to work with node.js: npm init -y
+* Create a .gitignore file to ignore unwanted files like node_modules
+* Install express package: npm install express
+* index.js file will be called by node.js for web service
+* Basic JavaScript express code link: https://github.com/webprogramming260/.github/blob/main/profile/webServices/express/express.md
+* Make calls to third-party endpoints using fetch: 
 fetch('https://api.quotable.io/random')
     .then((response) => response.json())
     .then((data) => {
     //data goes here
-});
+});`code()`
