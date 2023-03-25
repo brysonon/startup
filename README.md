@@ -49,3 +49,9 @@ fetch('https://api.quotable.io/random')
     .then((data) => {
     //data goes here
 });`code()`
+
+Notes on Simon DB project:
+* access production environment: ssh -i /location/to/key.pem ubuntu@mywebsiteurl.com
+* alter both production environment and development environment variables to make database more secure
+* install mongodb: npm install mongodb
+* use pm2 restart all --update-env AND pm2 save after updating production environment variables
