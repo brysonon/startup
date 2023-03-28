@@ -55,3 +55,10 @@ Notes on Simon DB project:
 * alter both production environment and development environment variables to make database more secure
 * install mongodb: npm install mongodb
 * use pm2 restart all --update-env AND pm2 save after updating production environment variables
+
+Notes on Simon Login project:
+* Install all of the packages you will need: npm install express cookie-parser mongodb uuid bcrypt
+* A service endpoint is a digital location (typically a URL) where API receives requests about a specific resource - provides location of resource on the server to a client
+* use of authorization cookies to store authorization tokens for an authenticated user using secure, httpOnly, and sameSite
+* creation of four different service endpoints: authCreate, authLogin, authLogout, and userGet
+* use of Express router function called secureApiRouter that verifies authorization cookie is valid before passing requests to endpoints (all of the endpoints must pass through this function)
