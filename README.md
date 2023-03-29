@@ -62,3 +62,11 @@ Notes on Simon Login project:
 * use of authorization cookies to store authorization tokens for an authenticated user using secure, httpOnly, and sameSite
 * creation of four different service endpoints: authCreate, authLogin, authLogout, and userGet
 * use of Express router function called secureApiRouter that verifies authorization cookie is valid before passing requests to endpoints (all of the endpoints must pass through this function)
+
+Notes on Simon WebSocket project:
+* WebSocket connections are peer to peer where either party can efficiently send data at any time
+* Send messages with the send function and receive messages with onmessage function
+* Install WebSocket: npm install ws
+* Can debug WebSocket connection with Chrome debugger -> Network tab -> Messages tab
+* Non-secure HTTP non-secure WebSocket (ws) protocal that is represented by window.location.protocal variable; otherwise use secure WebSocket (wss)
+
