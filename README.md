@@ -70,3 +70,8 @@ Notes on Simon WebSocket project:
 * Can debug WebSocket connection with Chrome debugger -> Network tab -> Messages tab
 * Non-secure HTTP non-secure WebSocket (ws) protocal that is represented by window.location.protocal variable; otherwise use secure WebSocket (wss)
 
+Notes on Startup Service project:
+* The most valuable thing I need to remember is to make sure to npm init -y and npm install all the necessary tools I need in the very beginning
+* Take it one task at a time, whether that is creating a third-party service endpoint or configuring work with WebSocket. This way, you won't get burnt out.
+* It is important to work in tiny increments so as to keep your mind fresh and continue to work on tackling each problem
+

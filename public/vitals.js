@@ -27,6 +27,7 @@ setInterval(function() {
     document.getElementById('timer').innerHTML = hours + ":" + minutes + ":" + seconds;
 }, 1000);
 
+document.getElementById("output").style.display = "none";
 
 var form = document.getElementById('sheetdb-form');
 form.addEventListener("submit", e => {
@@ -38,8 +39,14 @@ form.addEventListener("submit", e => {
       response => response.json()
   ).then((html) => {
     // you can put any JS code here
-    window.open('https://docs.google.com/spreadsheets/d/1Zr65knDwCaftWZJHeuYE0-0N8xq7OPVG5s500hF9egE/edit#gid=0', '_blank');
-
+    var x = document.getElementById('output');
+    x.style.display = 'block';
+  
+    const formToReset = document.getElementById('sheetdb-form');
+    formToReset.addEventListener('submit', (e) => {
+      e.preventDefault();
+      formToReset.reset();
+    });
   });
 });
 
@@ -71,17 +78,6 @@ const random = Math.floor(Math.random() * 1000);
 callService("https://api.quotable.io/random", displayQuote);
 
 //reset form after submitting
-document.getElementById("output").style.display = "none";
 
-function resetForm() {
-  var x = document.getElementById('output');
-  x.style.display = 'block';
-
-  const formToReset = document.getElementById('sheetdb-form');
-  formToReset.addEventListener('submit', (e) => {
-    e.preventDefault();
-    formToReset.reset();
-  });
-}
 
 
