@@ -9,7 +9,7 @@ class Caregiver {
   }
 
   getCaregiverName() {
-    return localStorage.getItem('username') ?? 'Anonymous user';
+    return localStorage.getItem('userName') ?? 'Anonymous user';
   }
 }
 
@@ -69,3 +69,19 @@ function callService(url, displayCallback) {
 
 const random = Math.floor(Math.random() * 1000);
 callService("https://api.quotable.io/random", displayQuote);
+
+//reset form after submitting
+document.getElementById("output").style.display = "none";
+
+function resetForm() {
+  var x = document.getElementById('output');
+  x.style.display = 'block';
+
+  const formToReset = document.getElementById('sheetdb-form');
+  formToReset.addEventListener('submit', (e) => {
+    e.preventDefault();
+    formToReset.reset();
+  });
+}
+
+
