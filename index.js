@@ -91,7 +91,7 @@ secureApiRouter.get('/scores', async (req, res) => {
 
 // SubmitScore
 secureApiRouter.post('/score', async (req, res) => {
-  await DB.addScore(req.body);
+  await DB.addH(req.body);
   const scores = await DB.getHighScores();
   res.send(scores);
 });

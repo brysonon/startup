@@ -75,3 +75,9 @@ Notes on Startup Service project:
 * Take it one task at a time, whether that is creating a third-party service endpoint or configuring work with WebSocket. This way, you won't get burnt out.
 * It is important to work in tiny increments so as to keep your mind fresh and continue to work on tackling each problem
 
+Notes on Simon React project:
+* Changing application from multi-page application to single-page application
+* Refer to https://github.com/webprogramming260/.github/blob/main/profile/simon/simon-react/simon-react.md for steps converting to React 
+* Install react bootstrap: npm install bootstrap react-bootstrap
+* Convert all code to React components by copying over code and creating child components
+* Create .env.local file in order to debug 

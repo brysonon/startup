@@ -76,8 +76,3 @@ function callService(url, displayCallback) {
 
 const random = Math.floor(Math.random() * 1000);
 callService("https://api.quotable.io/random", displayQuote);
-
-//reset form after submitting
-
-
-
