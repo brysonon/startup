@@ -1,54 +1,50 @@
-// Get the message input and messages container elements
-const messageInput = document.getElementById('message-input');
-const messagesContainer = document.getElementById('messages-container');
+// Adjust the webSocket protocol to what is being used for HTTP
+const protocol = window.location.protocol === 'http:' ? 'ws' : 'wss';
+const socket = new WebSocket(`${protocol}://${window.location.host}/ws`);
 
-// Function to create and append a message bubble to the messages container
-function appendMessageBubble(message, isUser) {
-  // Create the message bubble element
-  const messageBubble = document.createElement('div');
-  messageBubble.classList.add('message-bubble');
-  messageBubble.classList.add(isUser ? 'user-bubble' : 'bot-bubble');
-  messageBubble.innerText = message;
+// Display that we have opened the webSocket
+socket.onopen = (event) => {
+  appendMsg('system', 'websocket', 'connected');
+};
 
-  // Append the message bubble to the messages container
-  messagesContainer.appendChild(messageBubble);
+// Display messages we receive from our friends
+socket.onmessage = async (event) => {
+  const text = await event.data.text();
+  const chat = JSON.parse(text);
+  appendMsg('friend', chat.name, chat.msg);
+};
 
-  // Scroll to the bottom of the messages container
-  messagesContainer.scrollTop = messagesContainer.scrollHeight;
-}
+// If the webSocket is closed then disable the interface
+socket.onclose = (event) => {
+  appendMsg('system', 'websocket', 'disconnected');
+  document.querySelector('#name-controls').disabled = true;
+  document.querySelector('#chat-controls').disabled = true;
+};
 
-// Function to handle sending a message
+// Send a message over the webSocket
 function sendMessage() {
-  // Get the message text from the input
-  const message = messageInput.value;
-
-  // Clear the input
-  messageInput.value = '';
-
-  // Append the user message bubble to the messages container
-  appendMessageBubble(message, true);
-
-  // TODO: Send the message to a server for processing and get the bot response
-
-  // Append the bot message bubble to the messages container
-  //const botResponse = 'Your message above has been sent!';
-  //appendMessageBubble(botResponse, false);
+  const msgEl = document.querySelector('#new-msg');
+  const msg = msgEl.value;
+  if (!!msg) {
+    appendMsg('me', 'me', msg);
+    const name = localStorage.getItem('userName') ?? 'Anonymous user';
+    socket.send(`{"name":"${name}", "msg":"${msg}"}`);
+    msgEl.value = '';
+  }
 }
 
-// Add a listener for the Enter key on the message input to send the message
-messageInput.addEventListener('keydown', function(event) {
-  if (event.key === 'Enter') {
+// Create one long list of messages
+function appendMsg(cls, from, msg) {
+  const chatText = document.querySelector('#chat-text');
+  chatText.innerHTML =
+    `<div class="p-1" style="border-radius: 15px"><span class="${cls}">${from}</span>: ${msg}</div>` +
+    chatText.innerHTML;
+}
+
+// Send message on enter keystroke
+const input = document.querySelector('#new-msg');
+input.addEventListener('keydown', (e) => {
+  if (e.key === 'Enter') {
     sendMessage();
   }
 });
-
-//Place caregiver names before the message bubble
-let caregiverNames = document.querySelectorAll('.caregiver-name');
-
-for (let i = 0; i < caregiverNames.length; i++) {
-  caregiverNames[i].innerHTML = this.getCaregiverName();
-}
-
-function getCaregiverName() {
-  return localStorage.getItem('username') ?? 'Anonymous user';
-}

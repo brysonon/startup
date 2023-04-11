@@ -50,6 +50,15 @@ body {
     color: white !important;
   }
   
+  div .friend {
+    color: rgb(153, 87, 148);
+    justify-content: right;
+  }
+  
+  div .me {
+    color: rgb(87, 153, 117);
+  }
+
   @media (orientation: portrait) {
     header {
       flex-direction: column;
