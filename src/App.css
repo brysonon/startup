@@ -1,38 +1,81 @@
-.App {
-  text-align: center;
-}
-
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
-}
-
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
-}
-
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
+body {
   display: flex;
   flex-direction: column;
-  align-items: center;
+  margin: 0;
+  height: 100vh;
+}
+
+header {
+  display: flex;
+  flex: 0 60px;
+  background-color: rgb(168, 176, 229);
+  padding-left: 2vw;
+  padding-right: 2vw;
+}
+
+footer {
+  display: flex;
+  flex: 0 15px;
+  background-color: rgb(168, 176, 229);
+  padding-left: 2vw;
+}
+
+main {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
   justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+  background-color: rgb(209, 215, 246);
+  align-items: center; 
 }
 
-.App-link {
-  color: #61dafb;
+section:nth-child(1) {
+  flex: 1;
+  background-color: white;
+}
+section:nth-child(2) {
+  flex: 8;
+  background-color: #F4F6FE;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
+.nav-pills > li > a.active {
+  background-color: #7C88CA !important;
+}
+
+.nav-pills > li > a {
+  color: black !important;
+}
+
+.nav-pills > li > a:hover {
+  color: white !important;
+}
+
+div .friend {
+  color: rgb(153, 87, 148);
+  justify-content: right;
+}
+
+div .me {
+  color: rgb(87, 153, 117);
+}
+
+@media (orientation: portrait) {
+  header {
+    flex-direction: column;
   }
-  to {
-    transform: rotate(360deg);
+  main {
+    flex-direction: column !important;
+  }
+}
+
+@media (max-height: 400px) {
+  header {
+    display: none;
+  }
+  footer {
+    display: none;
+  }
+  main {
+    flex: 1 100vh;
   }
 }
